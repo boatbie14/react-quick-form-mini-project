@@ -2,7 +2,6 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { GrPowerReset } from "react-icons/gr";
 
 function FormResult({ data, onReset }) {
-  console.log(data);
   return (
     <div className="w-full p-6">
       <div className="bg-[#F1FDF4] p-4 flex flex-col gap-6 rounded-xl border border-[#b8f7d0] mb-6">
