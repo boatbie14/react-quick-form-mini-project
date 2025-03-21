@@ -1,9 +1,11 @@
 import "./App.css";
+import "./styles/base.css";
+import FormContainer from "./components/FormContainer";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl text-amber-300 font-bold underline">Hello world!</h1>
+      <FormContainer />
     </>
   );
 }
