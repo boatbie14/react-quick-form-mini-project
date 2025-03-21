@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <FormContainer />
+      <div className="text-sm text-gray-500 text-center py-6">Customized by Boat</div>
     </>
   );
 }

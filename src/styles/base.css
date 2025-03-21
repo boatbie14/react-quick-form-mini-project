@@ -3,3 +3,9 @@ body {
   padding: 1.5rem;
   background-color: #ebf0f5;
 }
+
+.input-error {
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 8px;
+}
