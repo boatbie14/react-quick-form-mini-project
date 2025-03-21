@@ -106,12 +106,12 @@ function MovieForm() {
               เลือกหนังที่คุณชอบ <span className="text-red-500">*</span>
             </label>
             <div
-              className={`select-favmovie pt-4 flex flex-col gap-6 ${
+              className={`select-favmovie pt-4 flex flex-col gap-4 ${
                 errorFields.includes("favMovie") ? "border border-red-500 p-1 rounded-sm" : ""
               }`}
             >
               {movies.map((movie, index) => (
-                <div key={movie.title} className="flex flex-row gap-4 items-center">
+                <div key={movie.title} className="flex flex-row gap-4 items-center hover:bg-gray-200 px-2 py-2">
                   <input
                     type="radio"
                     id={`movie-${index}`}
@@ -123,7 +123,7 @@ function MovieForm() {
                   />
 
                   <div>
-                    <label htmlFor={`movie-${index}`} className="font-medium">
+                    <label htmlFor={`movie-${index}`} className="font-medium cursor-pointer">
                       {movie.title} ({movie.year})<p className="text-sm text-gray-500">Director: {movie.director}</p>
                     </label>
                   </div>
